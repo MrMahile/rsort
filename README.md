@@ -22,6 +22,11 @@ See [INSTALL.md](INSTALL.md) for detailed installation instructions.
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source ~/.cargo/env
 
+# git clone https://github.com/MrMahile/rsort.git
+  cd rsort
+
+then
+
 # Build from source
 cargo build --release
 
@@ -31,7 +36,7 @@ cargo build --release
 ## Usage
 
 ```bash
-rsort <input> <output> [OPTIONS]
+./target/release/rsort <input> <output> [OPTIONS]
 ```
 
 ### Arguments
@@ -49,13 +54,13 @@ rsort <input> <output> [OPTIONS]
 
 ```bash
 # Basic usage
-rsort hostnames.txt sorted.txt
+./target/release/rsort hostnames.txt sorted.txt
 
 # Custom chunk size
-rsort large_file.txt output.txt --chunk-size 100
+./target/release/rsort large_file.txt output.txt --chunk-size 100
 
 # With thread count
-rsort input.txt output.txt --threads 24
+./target/release/rsort input.txt output.txt --threads 24
 ```
 
 ## How It Works
