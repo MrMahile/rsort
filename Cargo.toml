@@ -1,0 +1,13 @@
+[package]
+name = "rsort"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+hashbrown = "0.14"
+rayon = "1.8"
+indicatif = "0.17"
+anyhow = "1.0"
+num_cpus = "1.0"
+
