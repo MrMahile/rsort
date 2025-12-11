@@ -111,19 +111,31 @@ After completion, the tool reports:
 ## Example Output
 
 ```
+Sroot@admin:/mnt/c/Users/ravi/Downloads/Github/rsort# time ./rsort alltargets output.txt
 Splitting file into chunks...
-Found 391 chunks, processing sequentially with streaming...
-Processing chunk 1/391 (offset 0-52428812)...
-⠁ [00:02:28] Processed 17600000 lines
-Processing chunk 10/391 (offset 471859350-524288165)...
-⠁ [00:02:45] Processed 36800000 lines
-...
+Found 621 chunks, processing sequentially with streaming...
+Processing chunk 1/621 (offset 0-52428866)...
+⠁ [00:04:41] Processed 18300000 lines chunk 10/621 (offset 471859451-524288269)...
+⠁ [00:04:55] Processed 38400000 lines chunk 20/621 (offset 996147687-1048576506)...                                                                                                                                                                                
+..
+..
+..
+..
+..
+..
+⠁ [00:19:59] Processed 1203000000 lines chunk 580/621 (offset 30356284647-30408713460)...
+⠁ [00:20:15] Processed 1224200000 line Processing chunk 610/621 (offset 31929149056-31981577863)...
+⠁ [00:21:02] Processed 1286700000 lines chunk 620/621 (offset 32453437176-32505866010)...
+  [00:21:04] Completed Deduplication Complete!
+  Lines processed: 1289508243
+  Duplicates removed: 694150990
+  Processing time: 1264.60s
+  Throughput: 1019693.89 lines/sec
 
-Deduplication Complete!
-  Lines processed: 240400000
-  Duplicates removed: 15000000
-  Processing time: 6.02s
-  Throughput: 39933554.82 lines/sec
+
+real    22m24.727s
+user    12m41.573s
+sys     0m40.286s
 ```
 
 ## System Requirements
